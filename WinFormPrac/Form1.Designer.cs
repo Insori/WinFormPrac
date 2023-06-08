@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblFormTitle = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFormTitle
@@ -44,11 +46,22 @@
             this.lblFormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblFormTitle.Click += new System.EventHandler(this.lblFormTitle_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinFormPrac.Properties.Resources._1867fa0a19f48;
+            this.pictureBox1.Location = new System.Drawing.Point(60, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 143);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblFormTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -58,6 +71,7 @@
             this.Text = "3-1 급훈";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -65,6 +79,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblFormTitle;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
